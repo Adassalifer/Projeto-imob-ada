@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300&family=Poppins:wght@400;700&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<title>ADA | Imóveis em Recife - Pernambuco</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="index.js"></script>
+	<script src="index.java"></script>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Imóveis em Recife</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div class="banner">
+			<img src="67720-banner-1.png" alt="Banner MRV">
+		</div>
+
+		<section class="filters">
+			<h2>Encontre seu imóvel em Recife</h2>
+			<form>
+				<label for="type">Tipo de imóvel</label>
+				<select name="type" id="type">
+					<option value="1">Apartamento</option>
+					<option value="2">Casa</option>
+					<option value="3">Cobertura</option>
+					<option value="4">Kitnet/Studio</option>
+					<option value="5">Terreno</option>
+				</select>
+
+				<label for="neighborhood">Bairro</label>
+				<select name="neighborhood" id="neighborhood">
+					<option value="1">Boa Viagem</option>
+					<option value="2">Graças</option>
+					<option value="3">Recife Antigo</option>
+					<option value="4">Pina</option>
+					<option value="5">Espinheiro</option>
+				</select>
+
+				<label for="price">Faixa de preço</label>
+				<input type="range" id="price" name="price" min="3000" max="1000000">
+
+				<button type="submit">Buscar</button>
+			</form>
+		</section>
+
+		<section class="results">
+			<div class="card">
+				<img src="baixados.jpeg" alt="Imóvel 1">
+				<h3>Apartamento em Boa Viagem</h3>
+				<p>3 quartos | 2 suíte | 1 vaga de garagem</p>
+				<p>Preço: R$500.000,00</p>
+			</div>
+
+			<div class="card">
+				<img src="casa.jpg" alt="Imóvel 2">
+				<h3>Casa na Graças</h3>
+				<p>4 quartos | 2 suítes | 2 vagas de garagem</p>
+				<p>Preço: R$700.000,00</p>
+			</div>
+
+			<div class="card">
+				<img src="cob.jpg" alt="Imóvel 3">
+				<h3>Cobertura no Recife Antigo</h3>
+				<p>5 quartos | 3 suítes | 3 vagas de garagem</p>
+				<p>Preço: R$1.100.000,00</p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Todos os direitos reservados - Ada-Engenharia</p>
+	</footer>
+</body>
+</html>
